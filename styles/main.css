@@ -12,27 +12,53 @@ textarea {
 	font-size: 14px;
 	line-height: 1.5;
 }
-
+body {
+	background: whitesmoke;
+}
 h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
 .container {
+	display: flex;
 }
-#fishList {
-	border: 5px dotted blue;
+.headline {
+	text-align: center;
+}
+.fishBin {
+	display: flex;
 }
 #fishes{
+	border: 5px purple;
 	display: flex;
 	flex-wrap: wrap;
 }
 .fish-card {
-	max-width: 200px;
+	max-width: 250px;
 	display: flex;
-	border: 5px dotted red;
+	border: 5px solid lightseagreen;
+	background: white;
+	border-left: 0px;
 	flex-wrap: wrap;
+	justify-content: center;
+}
+.fish-name {
+	justify-content: center;
 }
 .fish-image {
-	justify-content: center;
 	width: 98%;
+}
+.aside{
+	display: flex;
+}
+aside {
+	border: 15px solid black;
+	padding: 20px;
+	margin-left: 50px;
+	background: white;
+	min-width: 500px;
+}
+.asideBorder {
+	
+	min-width: 450px;
 }
