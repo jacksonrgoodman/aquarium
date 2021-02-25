@@ -12,7 +12,7 @@ export const fishList = () => {
     //Get array of fish
     const allFishes = getFish();
     //get reference to location on DOM
-    const DOMLocation = document.querySelector("#fishList");
+    const DOMLocation = document.querySelector("#fishes");
     //declare a variable
     let fishHTMLReperesentations = "";
     //Loop over the array
@@ -20,6 +20,5 @@ export const fishList = () => {
         //do something with oneThingFromTheSea
         fishHTMLReperesentations += Fish(oneThingFromTheSea);
     }
-    console.log("fishHTMLRepresentations", fishHTMLReperesentations);
-    DOMLocation.innerHTML += fishHTMLReperesentations;
+    DOMLocation.innerHTML += `${fishHTMLReperesentations}`;
 }
