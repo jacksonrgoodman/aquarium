@@ -1,7 +1,7 @@
 export const Fish = (fishObj) => {
     return(
         `<article class="fish-card">
-            <div><img class="fish-image" src="${fishObj.image}" /></div>
+            <div><img class="fish-image" src="${fishObj.image}" alt="Fish" /></div>
             <h3 class="fish-name">Name: ${fishObj.name}</h3>
             <ul>
                 <li class="fish-details">Species: ${fishObj.species}</li>
