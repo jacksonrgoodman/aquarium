@@ -253,4 +253,36 @@ const fishCollection = [
 ];
 export const getFish = () => {
     return fishCollection;
+};
+export const getMostHolyFish = () => {
+    const holyFishArray = []
+    for (const fishObj of fishCollection) {
+        if (fishObj.inches % 3 === 0) {
+            holyFishArray.push(fishObj);
+        }
+    }
+    console.log("Most Holy Fish",`${holyFishArray}`);
+    return holyFishArray;
+};
+export const getSoldierFish = () => {
+    const soldiersArray = [];
+    for (const fishObj of fishCollection) {
+        //divisible by 5 but excluding 3
+        if(fishObj.inches %5 === 0 && fishObj.inches % 3 !== 0) {
+            soldiersArray.push(fishObj);
+        }
+    }
+    console.log("Soldier",`${soldiersArray}`);
+    return soldiersArray;
+};
+export const getUnworthyFish = () => {
+    const unworthyFishArray = []
+    for (const fishObj of fishCollection) {
+        //not 5 or 3
+        if (fishObj.inches %5 !== 0 && fishObj.inches %3 !==0){
+            unworthyFishArray.push(fishObj);
+        }
+    }
+    console.log("Unworthy",`${unworthyFishArray}`);
+    return unworthyFishArray;
 }

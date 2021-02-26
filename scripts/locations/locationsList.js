@@ -21,6 +21,4 @@ export const locationsList = () => {
         locationsHTMLReperesentations += locations(onePlaceFromMartin);
     }
     DOMLocation.innerHTML += `${locationsHTMLReperesentations}`;
-    console.log(`${locationsHTMLReperesentations}`);
-    console.log("Can you see this? Locations");
-}
+};

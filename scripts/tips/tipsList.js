@@ -19,6 +19,6 @@ export const tipsList = () => {
     for(const oneThingFromMartin of allTips) {
         //do something with oneThingFromTheSea
         tipsHTMLReperesentations += tips(oneThingFromMartin);
-    }
+    };
     DOMLocation.innerHTML += `${tipsHTMLReperesentations}`;
-}
+};
