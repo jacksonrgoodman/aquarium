@@ -28,37 +28,54 @@ h1,h2,h3,h4,h5,h6 {
 .fishBin {
 	display: flex;
 }
+#tipsBorder {
+
+}
 #fishes{
-	border: 5px purple;
+	border: 5px dotted purple;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
 }
 .fish-card {
+	margin: 5px;
 	max-width: 250px;
 	display: flex;
 	border: 5px solid lightseagreen;
 	background: white;
-	border-left: 0px;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 .fish-name {
+	border: 5px dotted purple;
 	justify-content: center;
 }
 .fish-image {
-	width: 98%;
+	/* border: 5px dotted purple; */
+	width: 97%;
+	justify-content: center;
 }
-.aside{
+.navPortal {
+	border: 10px solid black;
+	background: white;
+	min-width: 27%;
+	text-align: center;
+	flex-direction: column;
 	display: flex;
 }
-aside {
-	border: 15px solid black;
-	padding: 20px;
-	margin-left: 50px;
-	background: white;
-	min-width: 500px;
+.navArea {
+	border: 5px dotted yellow;
+	display: flex;
+	justify-content: center;
 }
-.asideBorder {
-	
-	min-width: 450px;
+.navList {
+	border: 5px solid lightseagreen;
+	padding-left: 0%;
+	justify-content: center;
+}
+ul {
+	list-style-type: none;
+}
+.nav {
+	border: 5px dotted blue;
 }
