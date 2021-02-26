@@ -27,7 +27,7 @@ const tipsCollection = [
         name: "7",
         tip: "G",
     }
-]
+];
 export const getTips = () => {
     return tipsCollection;
-}
+};

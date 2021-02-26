@@ -5,5 +5,5 @@ export const locations = (locationsObj) => {
                 <li class="">${locationsObj.tip}</li>
             </ul>
         </nav>`
-    )
-}
+    );
+};

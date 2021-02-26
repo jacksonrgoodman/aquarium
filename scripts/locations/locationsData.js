@@ -27,7 +27,7 @@ const locationsCollection = [
         name: "Location 7",
         tip: "G",
     }
-]
+];
 export const getLocations = () => {
     return locationsCollection;
-}
+};

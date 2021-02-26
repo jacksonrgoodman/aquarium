@@ -1,5 +1,5 @@
 import { Fish } from "./Fish.js";
-import { getFish } from "./fishData.js";
+import { getFish, getMostHolyFish, getSoldierFish, getUnworthyFish } from "./fishData.js";
 /**Define the steps that need to be taken
  * 1. Get the array of fish
  * 2. Get a reference to the location on the DOM(document object model) where you want to display the list of fish
@@ -10,7 +10,12 @@ import { getFish } from "./fishData.js";
 
 export const fishList = () => {
     //Get array of fish
-    const allFishes = getFish();
+    // const allFishes = getFish();
+    const holyFish = getMostHolyFish();
+    const soldierFish = getSoldierFish();
+    const unworthyFish = getUnworthyFish();
+
+    const allFishes = holyFish.concat(soldierFish, unworthyFish);
     //get reference to location on DOM
     const DOMLocation = document.querySelector("#fishes");
     //declare a variable

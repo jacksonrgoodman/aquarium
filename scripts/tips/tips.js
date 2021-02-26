@@ -5,5 +5,5 @@ export const tips = (tipsObj) => {
                 <li class="">${tipsObj.tip}</li>
             </ul>
         </nav>`
-    )
-}
+    );
+};
