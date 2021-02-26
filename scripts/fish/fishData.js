@@ -254,6 +254,3 @@ const fishCollection = [
 export const getFish = () => {
     return fishCollection;
 }
-export const namedFish = (whatIsTheName) => {
-    return `Hello ${whatIsTheName}`;
-}
